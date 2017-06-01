@@ -1,0 +1,53 @@
+<!--
+  Copyright (c) 2012 The Chromium Authors. All rights reserved.
+  Use of this source code is governed by a BSD-style license that can be
+  found in the LICENSE file.
+
+  Brian Kennish <bkennish@chromium.org>
+
+  An option page for configuring notifications.
+-->
+<!doctype html>
+<html>
+  <head>
+    <title>Notification Demo</title>
+    <link href="options.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.10.1.min.js"></script>
+    <script src="options.js"></script>
+  </head>
+  <body>
+    <h1>
+      <img src="icons/tr-icon-small.png" alt="Toast">
+      Easy Translator
+    </h1>
+    <form id="options">     
+      <div class="rounded-table">
+	  <table class="compPropGroup">
+	      <tbody>
+		  <tr> 
+		      <td class="first">
+		            <label for="sourceLangSelect">Default source language:</label>
+		      </td>
+		      <td class="first">
+			    <select id="sourceLangSelect"></select>
+		      </td>
+		  </tr>
+		  <tr>    
+		      <td class="noFirst"> 
+			    <label for="targetLangSelect">Default target language:</label>
+		      </td>
+		      <td class="noFirst"> 
+			    <select id="targetLangSelect"></select> 
+		      </td>
+		  </tr>
+		  <tr>    
+		      <td class="noFirst" colspan="2">  
+			    <input type="checkbox" id="enableOtherLangs">Enable other translations in context menu</input> 
+		      </td>
+		  </tr>		  
+	      </tbody>
+	  </table>
+      </div>      
+    </form>
+  </body>
+</html>

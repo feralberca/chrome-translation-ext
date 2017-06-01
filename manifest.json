@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  
+  "name": "pepe",
+  "version": "1.2",
+  "description": "pepeito",
+  "options_page": "options.html",
+  "background": {
+    "scripts": ["js/lang-def.js", "background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches":["<all_urls>"],
+      "js": ["js/jquery-1.10.1.min.js", "js/jquery.jgrowl.min.js", "js/myscript.js" ],
+      "css": ["css/jquery.jgrowl.min.css", "css/EasyTranslator.css"]
+    }
+  ],
+  
+  "permissions": [
+        "http://*/*",
+        "https://*/*",
+	"contextMenus",
+	"tabs"
+  ],
+  
+  "icons": {
+    "16": "icons/tr-icon-bitty.png",
+    "48": "icons/tr-icon-small.png",
+    "128": "icons/tr-icon-large.png"
+  }
+}
